@@ -12,17 +12,19 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”.
 
 
 
-let numero =  document.getElementById('numero');
+let numeroElementoHtml = document.getElementById('numero');
 //let FizzBuzz = document.getElementById('fizz-buzz');
 //let Fizz = document.getElementById('fizz');
 //let Buzz = document.getElementById('buzz');
 
 
 for (let i = 0; i <= 100; i++ ){
-    numero.innerHTML += ` ${i} `;
+    numeroElementoHtml.innerHTML += ` ${i} `;
      
      if ( i % 3 ==0  && i % 5=== 0){
         console.log('FizzBuzz');
+
+        
         
         
     }else if ( i % 3 == 0 ) {
@@ -36,9 +38,17 @@ for (let i = 0; i <= 100; i++ ){
     }
     let = document.getElementById('parent');
     
-    const FizzBuzz = document.createElement("FizzBuzz")
-    FizzBuzz.append('numero')
+    const FizzBuzz = document.createElement("div")
+    console.log(FizzBuzz)
+    numeroElementoHtml.append(FizzBuzz)
+   // console.log(FizzBuzz)
+   // div.append(FizzBuzz)
+
 } 
+const FizzBuzz = document.createElement("div")
+console.log(FizzBuzz)
+FizzBuzz.append(numeroElementoHtml)
+
 
 
 
