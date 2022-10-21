@@ -20,34 +20,35 @@ let numeroElementoHtml = document.getElementById('numero');
 
 for (let i = 0; i <= 100; i++ ){
     numeroElementoHtml.innerHTML += ` ${i} `;
+    
      
      if ( i % 3 ==0  && i % 5=== 0){
         console.log('FizzBuzz');
-
+        numeroElementoHtml.innerText += `FizzBuzz`;
         
         
         
     }else if ( i % 3 == 0 ) {
-       
+        numeroElementoHtml.innerText += `Fizz`;
         console.log('Fizz')
     }else if ( i % 5 == 0 ) {
-       
+        numeroElementoHtml.innerText += `Buzz`;
         console.log('Buzz')
     }else{
         console.log(i);
     }
     let = document.getElementById('parent');
     
-    const FizzBuzz = document.createElement("div")
-    console.log(FizzBuzz)
-    numeroElementoHtml.append(FizzBuzz)
+
    // console.log(FizzBuzz)
    // div.append(FizzBuzz)
 
 } 
-const FizzBuzz = document.createElement("div")
-console.log(FizzBuzz)
-FizzBuzz.append(numeroElementoHtml)
+
+
+//const FizzBuzz = document.createElement("div")
+//console.log(FizzBuzz)
+//FizzBuzz.append(numeroElementoHtml)
 
 
 
