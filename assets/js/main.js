@@ -11,30 +11,35 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”.
 //multipli 5 stampa fizzbuzz
 
 
-//stampa 1-100
 
 let numero =  document.getElementById('numero');
-let i = 0;
+//let FizzBuzz = document.getElementById('fizz-buzz');
+//let Fizz = document.getElementById('fizz');
+//let Buzz = document.getElementById('buzz');
+
+
 for (let i = 0; i <= 100; i++ ){
     numero.innerHTML += ` ${i} `;
      
      if ( i % 3 ==0  && i % 5=== 0){
-        numero.innerHTML += `fixxbuxx ${i} `;
         console.log('FizzBuzz');
-    }else if ( i % 3 == 0 ) {
         
+        
+    }else if ( i % 3 == 0 ) {
+       
         console.log('Fizz')
     }else if ( i % 5 == 0 ) {
-        
+       
         console.log('Buzz')
     }else{
         console.log(i);
     }
-   
+    let = document.getElementById('parent');
     
-}
+    const FizzBuzz = document.createElement("FizzBuzz")
+    FizzBuzz.append('numero')
+} 
 
 
 
-numero.innerHTML += ` ${i} `;
-//
+
