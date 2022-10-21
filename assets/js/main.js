@@ -16,13 +16,16 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”.
 let numero =  document.getElementById('numero');
 let i = 0;
 for (let i = 0; i <= 100; i++ ){
-     
+    numero.innerHTML += ` ${i} `;
      
      if ( i % 3 ==0  && i % 5=== 0){
+        numero.innerHTML += `fixxbuxx ${i} `;
         console.log('FizzBuzz');
     }else if ( i % 3 == 0 ) {
+        
         console.log('Fizz')
     }else if ( i % 5 == 0 ) {
+        
         console.log('Buzz')
     }else{
         console.log(i);
@@ -31,13 +34,7 @@ for (let i = 0; i <= 100; i++ ){
     
 }
 
-//multipli di tre 
-
-if ( i % 3 == 0){
-    console.log('multiplo')
-}else {
-    console.log('non multiplo')
-}
 
 
-//numero.innerHTML += ` ${i} `;
+numero.innerHTML += ` ${i} `;
+//
