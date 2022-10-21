@@ -11,6 +11,12 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”.
 
 
 //stampa 1-100
+
+//let divNumero = document.getElementById('numero');
+
 for (let i = 0; i <= 100; i++ ){
     console.log(i);
+    document.getElementById('numero').innerHTML += ` ${i} `;
 }
+
+//
